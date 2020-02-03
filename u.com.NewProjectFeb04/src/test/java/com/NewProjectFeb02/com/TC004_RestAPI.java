@@ -35,7 +35,7 @@ public class TC004_RestAPI {
 	Assert.assertEquals(true, true);
 	System.out.println();
 	
-	
+	//test only
 		
 	}
 	
