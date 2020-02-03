@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1300" started-at="2020-02-03T07:07:38Z" finished-at="2020-02-03T07:07:39Z">
+  <suite name="Suite" duration-ms="13658" started-at="2020-02-03T21:23:19Z" finished-at="2020-02-03T21:23:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1300" started-at="2020-02-03T07:07:38Z" finished-at="2020-02-03T07:07:39Z">
-      <class name="com.NewProjectFeb02.com.TC017">
-        <test-method status="PASS" signature="extentReports()[pri:0, instance:com.NewProjectFeb02.com.TC017@2a18f23c]" name="extentReports" duration-ms="1268" started-at="2020-02-03T01:07:38Z" finished-at="2020-02-03T01:07:39Z">
+    <test name="Test" duration-ms="13658" started-at="2020-02-03T21:23:19Z" finished-at="2020-02-03T21:23:33Z">
+      <class name="com.NewProjectFeb02.com.TC007_LaunchAndLogOn">
+        <test-method status="PASS" signature="mainTest()[pri:0, instance:com.NewProjectFeb02.com.TC007_LaunchAndLogOn@5e025e70]" name="mainTest" duration-ms="13625" started-at="2020-02-03T15:23:19Z" finished-at="2020-02-03T15:23:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extentReports -->
-      </class> <!-- com.NewProjectFeb02.com.TC017 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- mainTest -->
+      </class> <!-- com.NewProjectFeb02.com.TC007_LaunchAndLogOn -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

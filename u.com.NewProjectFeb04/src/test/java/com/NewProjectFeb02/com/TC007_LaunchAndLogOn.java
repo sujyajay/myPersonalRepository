@@ -27,20 +27,21 @@ public class TC007_LaunchAndLogOn {
 		driver.get("https://test.salesforce.com");
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();		
+		
 		WebElement loginID = driver.findElement(By.id("username"));
 		WebElement passCode = driver.findElement(By.id("password"));
 		WebElement loginbutton = driver.findElement(By.id("Login"));
-	Assert.assertFalse(true);
+
 		loginID.sendKeys("username");
 		passCode.sendKeys("password");
 		loginbutton.click();
 		
 		Thread.sleep(2500);
-		Assert.assertEquals(driver.getPageSource().contains("Please check your username and password. If you still can't log in, contact your Salesforce administrator."),true, "Log on failed.. ");
+		//Assert.assertEquals(driver.getPageSource().contains("Please check your username and password. If you still can't log in, contact your Salesforce administrator."),true, "Log on failed.. ");
 		
 		//driver.close();
 		
-		System.out.println(getScreenshot(driver));
+		//System.out.println(getScreenshot(driver));
 		
 		//mouseDoubleClick(driver, driver.findElement(By.id("")));
 		
@@ -64,13 +65,3 @@ public class TC007_LaunchAndLogOn {
 		actions.doubleClick();
 	}
 }
-
-
-
-
-
-
-
-
-
-
