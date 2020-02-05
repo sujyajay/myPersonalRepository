@@ -24,8 +24,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Batman/Desktop/Selenium/selenium-server-standalone-3.141.59 (1).jar"/>
-	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/json-simple-1.1.jar/json-simple-1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/rest-assured-4.2.0-dist/rest-assured-4.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/rest-assured-4.2.0-dist/rest-assured-4.2.0-deps/activation-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/rest-assured-4.2.0-dist/rest-assured-4.2.0-deps/commons-codec-1.9.jar"/>
@@ -43,5 +41,11 @@
 	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/rest-assured-4.2.0-dist/rest-assured-4.2.0-deps/jaxb-osgi-2.3.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/rest-assured-4.2.0-dist/rest-assured-4.2.0-deps/org.apache.sling.javax.activation-0.1.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/rest-assured-4.2.0-dist/rest-assured-4.2.0-deps/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/json-simple-1.1.jar/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Batman/Downloads/commons-io-2.6-bin/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

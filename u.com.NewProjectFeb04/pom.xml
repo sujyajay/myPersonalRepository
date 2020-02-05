@@ -67,10 +67,26 @@
     <version>4.1.1</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>6.10</version>
+    <version>7.0.0</version>
+    <scope>test</scope>
+</dependency>
+
+	<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
+    </dependency>
+
+<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>4.1.2</version>
+    <scope>test</scope>
 </dependency>
 
   </dependencies>

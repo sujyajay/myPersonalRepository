@@ -41,7 +41,6 @@ public class TestListeners extends TC007_LaunchAndLogOn implements ITestListener
 		File dest = new File("./newFile009.jpg");
 		Utils.copyFile(source, dest);
 		
-		
 	}
 
 	public void onTestSkipped(ITestResult result) {
