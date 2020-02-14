@@ -1,15 +1,16 @@
 package com.NewProjectFeb02.com;
 
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.json.JSONObject;
-import org.testng.Assert;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import org.json.simple.JSONObject;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -17,6 +18,16 @@ import io.restassured.specification.RequestSpecification;
 
 public class TC004_RestAPI {
 
+	@Test(description = "API AUTHENTICATION TEST")
+	public void authAPIGET(){
+		
+		RequestSpecification request = RestAssured.given();
+		request.auth().preemptive().basic("ToolsQA", "TestPassword");
+		Response response = request.get("http://restapi.demoqa.com/authentication/CheckForAuthentication");
+		System.out.println(response.getBody().asString());
+	
+	}	
+	
 	@Test(enabled = false)
 	public void restAPIGETRequest(){
 		

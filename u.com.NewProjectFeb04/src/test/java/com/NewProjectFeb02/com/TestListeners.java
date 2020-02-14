@@ -1,7 +1,9 @@
 package com.NewProjectFeb02.com;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
@@ -34,12 +36,22 @@ public class TestListeners extends TC007_LaunchAndLogOn implements ITestListener
 		System.out.println("This is the exception : " + result.getThrowable());
 		
 		//take screenshot
-		System.out.println(getScreenshot(driver));
+		try {
+			System.out.println(getScreenshot(driver));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File("./newFile009.jpg");
-		Utils.copyFile(source, dest);
+		try {
+			FileUtils.copyFile(source, dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 

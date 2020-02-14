@@ -1,14 +1,20 @@
 package zFeb04.suites;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 
 public class LogOnPage {
 
@@ -41,4 +47,17 @@ public class LogOnPage {
 		
 		fail.assertAll();		
 		}
+
+
+	public String getScreenshot(WebDriver driver) throws IOException{
+
+	TakesScreenshot ts = (TakesScreenshot)driver;
+	File source = ts.getScreenshotAs(OutputType.FILE);
+	File dest = new File("./newFile.jpg");
+	FileUtils.copyFile(source,dest);
+
+	return System.getProperty("user.dir") + dest;
+}
+
+
 }

@@ -1,7 +1,9 @@
 package com.NewProjectFeb02.com;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,6 +15,8 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.internal.Utils;
+
+import org.apache.commons.io.FileUtils;
 
 @Listeners(TestListeners.class)
 public class TC007_LaunchAndLogOn {
@@ -27,6 +31,9 @@ public class TC007_LaunchAndLogOn {
 		driver.get("https://test.salesforce.com");
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();		
+		
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
 		
 		WebElement loginID = driver.findElement(By.id("username"));
 		WebElement passCode = driver.findElement(By.id("password"));
@@ -48,12 +55,12 @@ public class TC007_LaunchAndLogOn {
 		driver.quit();
 	}
 	
-	public String getScreenshot(WebDriver driver){
+	public String getScreenshot(WebDriver driver) throws IOException{
 
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		File dest = new File("./newFile.jpg");
-		Utils.copyFile(source, dest);
+		FileUtils.copyFile(source,dest);
 
 		return System.getProperty("user.dir") + dest;
 	}
